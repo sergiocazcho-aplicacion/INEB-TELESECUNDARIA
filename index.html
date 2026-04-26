@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>INEB Telesecundaria Secocpur — 2026</title>
+<link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;600;700&family=Noto+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box;}
+body{
+  font-family:"Noto Sans",sans-serif;
+  background:linear-gradient(145deg,#0D47A1 0%,#1565C0 45%,#1976D2 75%,#0a3d8f 100%);
+  min-height:100vh;display:flex;flex-direction:column;align-items:center;
+  justify-content:center;padding:24px 16px;
+}
+.card{
+  width:100%;max-width:520px;background:rgba(255,255,255,0.97);
+  border-radius:28px;padding:40px 32px 32px;
+  box-shadow:0 20px 70px rgba(0,0,0,0.28);text-align:center;
+}
+.logo-wrap{position:relative;display:inline-block;margin-bottom:18px;}
+.logo{width:96px;height:96px;border-radius:50%;border:4px solid #F9A825;object-fit:cover;display:block;}
+.logo-ring{
+  position:absolute;inset:-6px;border-radius:50%;
+  border:3px solid rgba(249,168,37,0.35);
+  animation:pulse 2.5s ease-in-out infinite;
+}
+@keyframes pulse{0%,100%{transform:scale(1);opacity:0.6;}50%{transform:scale(1.08);opacity:1;}}
+h1{
+  font-family:"Rajdhani",sans-serif;font-size:1.3rem;font-weight:700;
+  color:#0D47A1;text-transform:uppercase;line-height:1.25;margin-bottom:4px;
+}
+.establecimiento{
+  font-size:0.78rem;color:#78909C;margin-bottom:6px;letter-spacing:0.3px;
+}
+.badge{
+  display:inline-block;background:#F9A825;color:#0D47A1;
+  font-family:"Rajdhani",sans-serif;font-weight:700;font-size:0.75rem;
+  padding:3px 14px;border-radius:20px;margin-bottom:26px;text-transform:uppercase;
+  letter-spacing:0.5px;
+}
+.app-wrap{margin-bottom:24px;}
+.app-btn{
+  display:flex;align-items:center;gap:18px;padding:22px 26px;
+  border-radius:20px;text-decoration:none;border:2px solid transparent;
+  transition:transform 0.15s,box-shadow 0.15s;
+  background:linear-gradient(135deg,#0D47A1,#1565C0);
+  color:white;
+}
+.app-btn:hover{transform:translateY(-4px);box-shadow:0 12px 36px rgba(13,71,161,0.38);}
+.app-btn .icon{font-size:2.5rem;flex-shrink:0;line-height:1;}
+.app-btn .info{text-align:left;flex:1;}
+.app-btn .info .ttl{
+  font-family:"Rajdhani",sans-serif;font-size:1.15rem;font-weight:700;
+  text-transform:uppercase;letter-spacing:0.5px;
+}
+.app-btn .info .desc{font-size:0.78rem;opacity:0.82;margin-top:4px;line-height:1.4;}
+.app-btn .arrow{font-size:1.3rem;opacity:0.7;flex-shrink:0;}
+.chips{display:flex;flex-wrap:wrap;gap:5px;margin-top:8px;}
+.chip{
+  display:inline-block;background:rgba(255,255,255,0.2);
+  border-radius:10px;font-size:0.67rem;padding:2px 9px;
+  font-weight:600;letter-spacing:0.3px;
+}
+.footer{
+  border-top:1.5px solid #E3F2FD;padding-top:16px;
+  font-size:0.72rem;color:#90A4AE;line-height:1.6;
+}
+.footer strong{color:#546E7A;}
+.firebase-badge{
+  display:inline-flex;align-items:center;gap:5px;
+  background:#FFF3E0;color:#E65100;border-radius:10px;
+  font-size:0.7rem;font-weight:700;padding:3px 10px;margin-top:6px;
+}
+</style>
+</head>
+<body>
+<div class="card">
+  <div class="logo-wrap">
+    <div class="logo-ring"></div>
+    <img class="logo"
+      src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='50' fill='%230D47A1'/%3E%3Ctext x='50' y='64' text-anchor='middle' font-size='44' fill='%23F9A825'%3E🎓%3C/text%3E%3C/svg%3E"
+      alt="Logo INEB"/>
+  </div>
+
+  <h1>Instituto Nacional de<br>Educación Básica</h1>
+  <p class="establecimiento">Telesecundaria · Aldea Secocpur, Cobán Alta Verapaz</p>
+  <span class="badge">🎓 Nivel Básico · Ciclo Escolar 2026</span>
+
+  <div class="app-wrap">
+    <a class="app-btn" href="registro-notas.html">
+      <span class="icon">📋</span>
+      <div class="info">
+        <div class="ttl">Registro de Notas</div>
+        <div class="desc">
+          Calificaciones bimestrales y lista de cotejo por docente
+          <div class="chips">
+            <span class="chip">4 bimestres</span>
+            <span class="chip">Conducta</span>
+            <span class="chip">Actividades</span>
+            <span class="chip">Boletas</span>
+          </div>
+        </div>
+      </div>
+      <span class="arrow">›</span>
+    </a>
+  </div>
+
+  <div class="footer">
+    <strong>Establecimiento:</strong> INEB Telesecundaria Secocpur<br>
+    <strong>Municipio:</strong> Cobán, Alta Verapaz<br>
+    <div class="firebase-badge">🔥 Datos en Firebase — sincronizados en la nube</div>
+  </div>
+</div>
+</body>
+</html>
